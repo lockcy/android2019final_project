@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="50dp"
+    android:background="@drawable/back5"
+    tools:context=".DirActivity">
+
+    <TextView
+        android:id="@+id/textView_dir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_gravity="center_horizontal"
+        android:text="子目录遍历"
+        android:textSize="50dp"
+        android:layout_marginLeft="60dp" />
+
+
+    <EditText
+        android:id="@+id/ip"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="请输入IP"
+        android:inputType="text"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+
+    <EditText
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="请输入类型"
+        android:inputType="text"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="3"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_gravity="center_horizontal">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="确 定"
+            android:textSize="18sp"
+            android:id="@+id/btn_confirm"
+            android:layout_marginTop="30dp"
+            android:foreground="?android:actionBarItemBackground"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="退 出"
+            android:textSize="18sp"
+            android:id="@+id/btn_cancel"
+            android:layout_marginTop="30dp"
+            android:foreground="?android:actionBarItemBackground"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="测试"
+                android:textSize="15dp" />
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

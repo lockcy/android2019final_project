@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="50dp"
+    android:background="@drawable/back5"
+    tools:context=".HashActivity">
+
+    <TextView
+        android:id="@+id/textView_hash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_gravity="center_horizontal"
+        android:text="哈希加密"
+        android:textSize="50dp"
+        android:layout_marginLeft="60dp" />
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/hashString"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="请输入需要加密的字符串"
+        android:inputType="text"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/textView_result1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:text=""
+        android:textSize="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="确 定"
+            android:textSize="18sp"
+            android:id="@+id/btn_confirm1"
+            android:layout_marginTop="30dp"
+            android:foreground="?android:actionBarItemBackground"/>
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="退 出"
+            android:textSize="18sp"
+            android:id="@+id/btn_cancel3"
+            android:layout_marginTop="30dp"
+            android:foreground="?android:actionBarItemBackground"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

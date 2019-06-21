@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back5"
+    android:paddingTop="50dp"
+    tools:context=".WeatherActivity">
+
+    <TextView
+        android:id="@+id/textView_weather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_gravity="center_horizontal"
+        android:text="天气查询"
+        android:textSize="50dp"
+        android:layout_marginLeft="60dp" />
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="请输入城市"
+        android:inputType="text"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/textView_result"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_gravity="center_horizontal"
+        android:text="测试"
+        android:textSize="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="查 询"
+            android:textSize="18sp"
+            android:id="@+id/btn_query"
+            android:layout_marginTop="30dp"
+            android:foreground="?android:actionBarItemBackground"/>
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="退 出"
+            android:textSize="18sp"
+            android:id="@+id/btn_cancel2"
+            android:layout_marginTop="30dp"
+            android:foreground="?android:actionBarItemBackground"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

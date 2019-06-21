@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="50dp"
+    android:background="@drawable/back4"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:maxLines="1"
+        android:layout_gravity="center_horizontal"
+        android:text="Secure Auxiliary Application"
+        android:textSize="30dp"
+        android:textColor="#9B30FF"
+        android:layout_marginLeft="10dp" />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="用户名"
+        android:inputType="text"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <EditText
+        android:id="@+id/passWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:id="@+id/btn_forget"
+        android:layout_height="wrap_content"
+        android:text="忘记密码？"
+        android:layout_width="120dp"
+        android:background="@android:color/transparent"
+        android:layout_gravity="right"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="登 录"
+            android:textSize="18sp"
+            android:id="@+id/btn_login"
+            android:layout_marginTop="30dp"
+            android:foreground="?android:actionBarItemBackground"/>
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="注 册"
+            android:textSize="18sp"
+            android:id="@+id/btn_register"
+            android:layout_marginTop="30dp"
+            android:foreground="?android:actionBarItemBackground"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="个人中心"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <Button
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:height="100dp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/person_info1"
+            android:text="个人信息"
+            android:textColor="#A9A9A9"
+            android:id="@+id/button_p1"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@android:color/transparent"
+            android:text="天气查询"
+            android:drawableTop="@drawable/weather"
+            android:textColor="#A9A9A9"
+            android:id="@+id/button_p2"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/port"
+            android:text="端口扫描"
+            android:textColor="#A9A9A9"
+            android:id="@+id/button_p3"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:height="100dp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/code"
+            android:text="Struts2检测"
+            android:textColor="#A9A9A9"
+            android:id="@+id/button_p4"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/website"
+            android:text="网站目录"
+            android:textColor="#A9A9A9"
+            android:id="@+id/button_p5"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/ip"
+            android:text="WHOIS"
+            android:textColor="#A9A9A9"
+            android:id="@+id/button_p6"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:height="100dp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/hash"
+            android:text="哈希加密"
+            android:textColor="#A9A9A9"
+            android:id="@+id/button_p7"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/wifi"
+            android:textColor="#A9A9A9"
+            android:text="WPA2破解"
+            android:id="@+id/button_p8"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/shell"
+            android:textColor="#A9A9A9"
+            android:text="shell"
+            android:id="@+id/button_p9"
+            android:textSize="20dp" />
+
+    </GridLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="50dp"
+    android:background="@drawable/back5"
+    tools:context=".ShellActivity">
+
+    <TextView
+        android:id="@+id/textView_shell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_gravity="center_horizontal"
+        android:text="Backdoor Shell"
+        android:textSize="50dp"
+        android:layout_marginLeft="15dp" />
+    <EditText
+        android:id="@+id/key"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="key"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <EditText
+        android:id="@+id/command"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="command"
+        android:inputType="text"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="4"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp">
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="exec"
+            android:textSize="18sp"
+            android:id="@+id/btn_exec"
+            android:layout_marginTop="30dp"
+            android:foreground="?android:actionBarItemBackground"/>
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="exit"
+            android:textSize="18sp"
+            android:id="@+id/btn_exit"
+            android:layout_marginTop="30dp"
+            android:foreground="?android:actionBarItemBackground"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="测试"
+                android:textSize="15dp" />
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

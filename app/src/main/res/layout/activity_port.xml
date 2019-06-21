@@ -1,0 +1,172 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="50dp"
+    android:background="@drawable/back5"
+    tools:context=".PortActivity">
+
+    <TextView
+        android:id="@+id/textView_port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_gravity="center_horizontal"
+        android:text="端口扫描"
+        android:textSize="40dp"
+        android:layout_marginLeft="60dp" />
+    <TextView
+        android:id="@+id/textView_caution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_gravity="center_horizontal"
+        android:text="[-]暂不支持局域网探测"
+        android:textSize="10dp"
+        android:layout_marginLeft="150dp" />
+
+    <EditText
+        android:id="@+id/ip"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="请输入IP或域名"
+        android:inputType="text"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="2.75"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-Pn 不进行发现" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-sV 版本检测" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-sT TCP扫描" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-sU UDP扫描" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-F 快速扫描" />
+
+            <CheckBox
+                android:id="@+id/checkBox6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-O 操作系统指纹" />
+
+            <CheckBox
+                android:id="@+id/checkBox7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-vv 详细输出" />
+
+            <CheckBox
+                android:id="@+id/checkBox8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-sS Syn扫描" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="3"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_scan"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:foreground="?android:actionBarItemBackground"
+            android:text="扫 描"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:foreground="?android:actionBarItemBackground"
+            android:text="退 出"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:text="测试"
+                android:textSize="15dp" />
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
